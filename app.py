@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-from preprocessing_utils import *
+from keras-preprocessing import *
 
 st.write("""
     # Web Content Mining
