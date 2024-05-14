@@ -7,15 +7,15 @@ def load_data():
     return df
 
 def main():
-    st.markdown("Assignment 3")
+    st.markdown("Web Mining Assignment 3")
 
-    st.subheader("Clustering news articles")
+    st.subheader("News articles")
 
     data = load_data()
 
     unique_clusters = data['Cluster'].unique()
 
-    selected_cluster = st.sidebar.selectbox("Select a Cluster", unique_clusters)
+    selected_cluster = st.sidebar.selectbox("Select Here", unique_clusters)
 
     st.success(f"Cluster {selected_cluster}")
 
